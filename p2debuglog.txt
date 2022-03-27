@@ -1,4 +1,4 @@
- gcc -g p2final.c -lm
+ gcc -g p2final.c -lm
  gdb ./a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -18,43 +18,35 @@ Reading symbols from ./a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x9e1: file p2final.c, line 27.
 (gdb) r
-Starting program: /home/runner/Test2Session2-3/a.out 
+Starting program: /home/runner/Test2Session2-4/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p2final.c:27
 27  {
 (gdb) n
-30    input_line(&x1,&y1);
-(gdb) s
-input_line (x1=0x7ffc8b48673c, y1=0x7ffc8b486740) at p2final.c:5
-5     printf("enter the point\n");
+30  input_line(&x1,&y1);
 (gdb) n
 enter the point
-6     scanf("%f%f",x1,y1);
-(gdb) n
-4
+3
 5
-7   }
-(gdb) m
-Ambiguous command "m": macro, maintenance, make, mem, monitor, mt.
-(gdb) n
-main () at p2final.c:31
-31    input_line(&x2,&y2);
+31  input_line(&x2,&y2);
 (gdb) n
 enter the point
-n
-32    input_line(&x3,&y3);
+2 
+4
+32  input_line(&x3,&y3);
 (gdb) n
 enter the point
-n
-33    istriangle=is_triangle(x1,y1,x2,y2,x3,y3);
+5 
+6
+33  istriangle=is_triangle(x1,y1,x2,y2,x3,y3);
 (gdb) n
-34    output(x1,y1,x2,y2,x3,y3,istriangle);
+34  output(x1,y1,x2,y2,x3,y3,istriangle);
 (gdb) n
-35    return 0;
+35  return 0;
 (gdb) n
 36  }
 (gdb) c
 Continuing.
-three lines forms a triangle[Inferior 1 (process 1072) exited normally]
-(gdb)
+three lines forms a triangle[Inferior 1 (process 1057) exited normally]
+(gdb

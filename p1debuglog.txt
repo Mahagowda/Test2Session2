@@ -1,8 +1,3 @@
-GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
- cloning into https://github.com/Mahagowda/Test2Session2...
-remote: Enumerating objects: 27, done.        
-remote: Counting objects: 100% (27/27), done.        
- 
  gcc -g p1final.c -lm
  gdb ./a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
